@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+form {
+    margin: 5px;
+
+}
+
+input{
+    margin: 20px 0; /* Solo margen superior e inferior */
+    padding: 10px; /* Espacio interior alrededor del texto */
+    width: 100%; /* Ancho completo */
+    max-width: 300px; /* Ancho máximo para evitar que los inputs sean demasiado grandes */
+    border: 2px solid #ccc;
+    border-radius: 2px;
+}
+
+.moduloh {
+    margin-top: 20px;
+}
+
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .my-table th,
+  .my-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .my-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1f2937;
+    color: white;
+  }
