@@ -31,7 +31,7 @@ export default function EditarTipo() {
       fechaActualizacion: fechaActualizacion,
     };
 
-    const response = await fetch(`http://localhost:12330/tipo/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/tipo/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

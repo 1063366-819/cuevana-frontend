@@ -67,7 +67,7 @@ export default function FormularioMedia() {
     };
 
 
-    const response = await fetch(`http://localhost:12330/media/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/media/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

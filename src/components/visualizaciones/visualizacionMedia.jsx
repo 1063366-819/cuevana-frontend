@@ -7,7 +7,7 @@ export default function VisualizacionMedia() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("http://localhost:12330/Media");
+      const response = await fetch(`${import.meta.env.VITE_PETICION}/media`);
       const data = await response.json();
       console.log(data);
       setModulo(data);
@@ -18,7 +18,7 @@ export default function VisualizacionMedia() {
 
   const deleteModulo = async (id) => {
     try {
-      const response = await fetch(`http://localhost:12330/director/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_PETICION}/media/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {

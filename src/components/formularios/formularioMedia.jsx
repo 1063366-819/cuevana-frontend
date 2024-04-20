@@ -64,7 +64,7 @@ export default function FormularioMedia() {
       actualizadoEn,
     };
 
-    const response = await fetch('http://localhost:12330/media',{
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/media`,{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

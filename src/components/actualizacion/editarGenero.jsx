@@ -36,7 +36,7 @@ export default function FormularioGenero() {
       descripcion,
     };
 
-    const response = await fetch(`http://localhost:12330/genero/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/genero/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

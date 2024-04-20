@@ -41,7 +41,7 @@ export default function FormularioProductora() {
       fechaActualizacion,
     };
 
-    const response = await fetch(`http://localhost:12330/productora/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/productora/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

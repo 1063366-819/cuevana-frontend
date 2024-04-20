@@ -28,7 +28,7 @@ export default function FormularioTipo() {
       fechaActualizacion: fechaActualizacion,
     };
     
-    const response = await fetch("http://localhost:12330/tipo", {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/tipo`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

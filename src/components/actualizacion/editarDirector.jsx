@@ -31,7 +31,7 @@ export default function FormularioDirector() {
       fechaActualizacion,
     };
 
-    const response = await fetch(`http://localhost:12330/director/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_PETICION}/director/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

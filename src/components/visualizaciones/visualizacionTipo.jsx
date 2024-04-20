@@ -8,7 +8,7 @@ export default function VisualizacionTipo() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("http://localhost:12330/tipo");
+      const response = await fetch(`${import.meta.env.VITE_PETICION}/tipo`);
       const data = await response.json();
       console.log(data);
       setModulo(data);
@@ -19,7 +19,7 @@ export default function VisualizacionTipo() {
 
   const deleteModulo = async (id) => {
     try {
-      const response = await fetch(`http://localhost:12330/tipo/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_PETICION}/tipo/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) {
